@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import { Link } from 'gatsby';
 
-const { BASE_URL } = process.env;
+const BASE_URL = process.env.REACT_APP_BASE_URL;
 
 const IndexPage = () => {
   const [previous, setPrevious] = useState([]);
