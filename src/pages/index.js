@@ -26,7 +26,7 @@ const IndexPage = () => {
     const vote = pictures.map((p) => ({ _id: p._id, score: p.score, win: p._id === _id }));
 
     const response = await axios.put(`${BASE_URL}/vote`, { vote });
-    if (response.status === 200) fetchPictures();
+    if (response.status === 201) fetchPictures();
   };
 
   if (previous.length >= 100) setPrevious([]);
