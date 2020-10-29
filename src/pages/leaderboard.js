@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import { Link } from 'gatsby';
 
-const BASE_URL = 'http://localhost:3000/api';
+const { BASE_URL } = process.env;
 
 const LeaderBoard = () => {
   const [leaderboard, setLeadearboard] = useState([]);
