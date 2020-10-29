@@ -35,10 +35,19 @@ const IndexPage = () => {
     fetchPictures();
   }, []);
 
-  if (!pictures) return <div>fetching pictures</div>;
+  if (!pictures)
+    return (
+      <header className="pt-2 text-center">
+        <h1 className="text-4xl">CatMash</h1>
+        <Link to="/leaderboard" className="hover:underline focus:underline">
+          Leaderboard
+        </Link>
+        <div>Loading Round...</div>
+      </header>
+    );
 
   return (
-    <div>
+    <>
       <header className="pt-2 text-center">
         <h1 className="text-4xl">CatMash</h1>
         <Link to="/leaderboard" className="hover:underline focus:underline">
@@ -67,7 +76,7 @@ const IndexPage = () => {
           </div>
         </div>
       </main>
-    </div>
+    </>
   );
 };
 
