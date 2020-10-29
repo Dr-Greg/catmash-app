@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css?family=Titillium+Web:400|Roboto:400&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  @apply antialiased;
+  text-rendering: optimizeLegibility;
+  font-size: 100%;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: 'Titillium Web', sans-serif;
+  font-weight: 400;
+}
+
+h1 {
+  font-size: 1.802em;
+}
+
+h2 {
+  font-size: 1.602em;
+}
+
+h3 {
+  font-size: 1.424em;
+}
+
+h4 {
+  font-size: 1.266em;
+}
+
+h5 {
+  font-size: 1.125em;
+}
+
+small,
+.text-small {
+  font-size: 0.889em;
+}
