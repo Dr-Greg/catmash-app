@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import { Link } from 'gatsby';
 
-const BASE_URL = process.env.REACT_APP_BASE_URL;
+const BASE_URL = process.env.GATSBY_BASE_URL;
 
 const LeaderBoard = () => {
   const [leaderboard, setLeadearboard] = useState([]);
