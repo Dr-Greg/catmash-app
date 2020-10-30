@@ -1,3 +1,7 @@
+# catmash-app
+
+CatMash APP is the frontend app of CatMash @https://github.com/Dr-Greg/catmash
+
 <!-- AUTO-GENERATED-CONTENT:START (STARTER) -->
 <p align="center">
   <a href="https://www.gatsbyjs.org">
